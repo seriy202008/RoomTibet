@@ -1,0 +1,16 @@
+// Flatpickr
+@import "../../node_modules/flatpickr/dist/flatpickr.min";
+.flatpickr-wrapper {
+    width: 100%;
+}
+
+// Slick-Slider
+@import "../../node_modules/slick-slider/slick/slick.scss";
+.slick-list {
+    width: 100%;
+}
+
+// Lightgallery
+@import "../../node_modules/lightgallery/scss/lightgallery";
+@import "../../node_modules/lightgallery/scss/lg-thumbnail";
+@import "../../node_modules/lightgallery/scss/lg-zoom";

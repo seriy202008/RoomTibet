@@ -1,0 +1,25 @@
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 4px 0px 0px 4px;
+    background: rgba(253, 253, 253, 0.4);
+    backdrop-filter: blur(2px);
+    &--star {
+        width: 24px;
+        height: 24px;
+        img {
+            width: 100%;
+        }
+    }
+
+    &--rate {
+        color: var(--color-prim);
+        font-family: var(--font-family-main);
+        font-size: var(--fz-xs);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px; /* 128.571% */
+    }
+}

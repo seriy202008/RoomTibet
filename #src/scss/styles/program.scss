@@ -1,0 +1,115 @@
+.program {
+    padding: calc(var(--space) * 4) 0 calc(var(--space) * 5);
+    background-color: var(--color-bg);
+    &--container {
+        display: flex;
+        gap: 120px;
+        align-items: center;
+        @media (max-width: $media-md) {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+
+    &--body {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        @media (max-width: $media-md) {
+            gap: 32px;
+        }
+    }
+
+    &--text {
+        color: var(--color-text);
+        font-family: var(--font-family-main);
+        font-size: var(--fz-m);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+
+    &--list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        @media (max-width: $media-md) {
+            gap: 32px;
+        }
+    }
+
+    &--item {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    &--icon {
+        flex: 0 0 50px;
+        background-color: #e5eeeb;
+        padding: 7px;
+        border-radius: 4px;
+        img {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    &--item_body {
+        flex: 1 1 auto;
+    }
+
+    &--name {
+        color: var(--color-text);
+        font-family: var(--font-family-main);
+        font-size: var(--fz-m);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; /* 111.111% */
+        letter-spacing: 0.216px;
+        margin-bottom: 4px;
+    }
+
+    &--description {
+        color: var(--color-text);
+        font-family: var(--font-family-main);
+        font-size: var(--fz-xs);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    &--btn {
+        margin-right: auto;
+        @media (max-width: $media-md) {
+            margin-left: auto;
+        }
+    }
+
+    &--image {
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(2, 250px);
+        gap: 10px;
+        @media (max-width: $media-sm) {
+            display: none;
+        }
+    }
+
+    &--img {
+        img {
+            width: 100%;
+        }
+        overflow: hidden;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        &:first-child,
+        &:last-child {
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+}

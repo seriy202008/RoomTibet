@@ -1,0 +1,46 @@
+.btn {
+    //Блочная модель
+    display: block;
+    padding: 16px 36px;
+    background-color: var(--color-prim);
+    border: 1px solid var(--color-prim);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 250ms;
+    //Текст
+    color: var(--color-text-rev);
+    font-family: var(--font-family-main);
+    font-size: var(--fz-s);
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0.192px;
+    // Псевдоклассы состояния
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: var(--color-text-rev);
+        color: var(--color-prim) !important;
+    }
+    &:link,
+    &:visited {
+        color: var(--color-text-rev, #fff);
+    }
+    //Модифкаторы
+    &-white {
+        background-color: var(--color-text-rev);
+        color: var(--color-prim);
+        border: 2px solid var(--color-text-rev);
+        &:hover,
+        &:active,
+        &:focus {
+            border: 2px solid var(--color-prim);
+        }
+        &:link,
+        &:visited {
+            color: var(--color-text-rev, #fff);
+        }
+    }
+    &-small {
+        padding: 12px 24px;
+    }
+}

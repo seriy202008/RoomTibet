@@ -1,0 +1,12 @@
+.container {
+    margin: 0 auto;
+    max-width: $media-md !important;
+    padding: 0 10px;
+    @media (max-width: $media-md) {
+        max-width: $media-sm !important;
+    }
+    @media (max-width: $media-sm) {
+        max-width: $media-xs !important;
+        padding: 0 16px;
+    }
+}

@@ -1,0 +1,64 @@
+.link_item {
+    position: relative;
+    padding-left: 16px;
+    cursor: pointer;
+    &::before {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 10px;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        background-image: url("@img/icon-arrow-right.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 10px;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        background-image: url("@img/icon-arrow-right-mark.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        opacity: 0;
+        transition: all 250ms;
+    }
+    &:hover::after {
+        opacity: 1;
+    }
+    display: flex;
+    gap: 8px;
+
+    &--link {
+        color: var(--color-text-rev);
+        font-family: var(--font-family-main);
+        font-size: var(--fx-xs);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; /* 128.571% */
+        transition: all 250ms;
+        position: relative;
+        text-decoration-line: underline;
+        text-decoration-color: transparent;
+        &:active,
+        &:focus,
+        &:link,
+        &:visited {
+            color: var(--color-text-rev);
+            text-decoration-line: underline;
+        }
+    }
+    &:hover &--link {
+        color: var(--color-text-mark);
+        text-decoration-line: underline;
+        text-decoration-color: var(--color-text-mark);
+    }
+}

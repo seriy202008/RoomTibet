@@ -1,0 +1,110 @@
+.subscribe {
+    margin-bottom: -98px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    @media (max-width: $media-md) {
+        margin-bottom: calc(var(--space) * 5);
+    }
+    &--content {
+        background-color: var(--color-text-rev);
+        border-radius: 6px;
+        box-shadow: 0px 0px 15px 0px rgba(23, 17, 29, 0.12);
+        padding: 40px 100px;
+        display: flex;
+        gap: 64px;
+        @media (max-width: $media-md) {
+            padding: 40px;
+        }
+        @media (max-width: $media-sm) {
+            padding: 24px;
+            flex-direction: column;
+            gap: 18px;
+        }
+    }
+
+    &--title {
+        font-size: var(--fz-lp);
+    }
+
+    &--subtitle {
+        font-size: var(--fz-m);
+    }
+    &--header {
+        @media (max-width: $media-md) {
+            flex: 1 1 40%;
+        }
+    }
+    &--form {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        @media (max-width: $media-md) {
+            flex: 1 1 60%;
+        }
+    }
+
+    &--label {
+        color: var(--color-text);
+        font-family: var(--font-family-main);
+        font-size: var(--fz-s);
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    &--field {
+        display: flex;
+        gap: 16px;
+        @media (max-width: $media-md) {
+            flex-direction: column;
+        }
+    }
+
+    &--input {
+        flex: 1 1 auto;
+        color: var(--color-text);
+        font-family: var(--font-family-main);
+        font-size: var(--fz-xs);
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px; /* 142.857% */
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 4px;
+        background: var(--color-bg);
+        @media (max-width: $media-md) {
+            padding: 12px 24px;
+        }
+    }
+    &--btn {
+        @media (max-width: $media-sm) {
+            margin-right: auto;
+        }
+    }
+    &--text {
+        color: var(--color-text);
+        font-family: var(--font-family-main);
+        font-size: var(--fz-xs);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px; /* 128.571% */
+    }
+
+    &--link {
+        color: inherit;
+        text-decoration: underline;
+        transition: all 200ms;
+        &:hover,
+        &:active,
+        &:focus {
+            color: var(--color-prim) !important;
+            text-decoration: underline;
+        }
+        &:visited,
+        &:link {
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+}

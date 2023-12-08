@@ -1,0 +1,47 @@
+// Подключение Шрифтов
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700;6..12,800&display=swap");
+
+// SCSS-Переменные
+$media-md: 1200px;
+$media-sm: 780px;
+$media-xs: 390px;
+// CSS-Переменные
+:root {
+    --font-family-main: "Nunito Sans", Arial, Helvetica, sans-serif;
+    --font-family-head: "NEXT ART_Bold", "Nunito Sans", Arial, Helvetica, sans-serif;
+    --color-prim: #1a3e3e;
+    --color-bg: #f3f5f4;
+    --color-text: #18121e;
+    --color-text-rev: #fdfdfd;
+    --color-text-mark: #f2be22;
+    --fz-xxl: 50px; //50 -> 28 xxl
+    --fz-xl: 32px; // 32 -> 24 xl
+    --fz-lp: 26px; //26 -> 24 lp
+    --fz-l: 24px; //24 -> 16 l
+    --fz-ml: 20px; //20 -> 16 ml
+    --fz-m: 18px; //18 -> 16 m
+    --fz-s: 16px;
+    --fz-xs: 14px;
+    --fz-xxs: 12px;
+    --space: 20px;
+}
+@media (max-width: $media-md) {
+    :root {
+        --fz-xxl: 39px; //50 -> 28 xxl
+        --fz-xl: 28px; // 32 -> 24 xl
+        --fz-lp: 24px; //26 -> 24 lp
+        --fz-l: 20px; //24 -> 16 l
+        --fz-ml: 18px; //20 -> 16 ml
+        --fz-m: 16px; //18 -> 16 m
+        --space: 15px;
+    }
+}
+@media (max-width: $media-sm) {
+    :root {
+        --fz-xxl: 28px; //50 -> 28 xxl
+        --fz-xl: 24px; // 32 -> 24 xl
+        --fz-l: 16px; //24 -> 16 l
+        --fz-ml: 16px; //20 -> 16 ml
+        --space: 10px;
+    }
+}

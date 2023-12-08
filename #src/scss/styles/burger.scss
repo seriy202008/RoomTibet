@@ -1,0 +1,71 @@
+.burger {
+    display: none;
+    @media (max-width: $media-md) {
+        display: block;
+    }
+    &--open {
+        background-color: transparent;
+        cursor: pointer;
+        backdrop-filter: blur(3px);
+        width: 40px;
+        border-radius: 6px;
+        img {
+            width: 100%;
+        }
+        transition: all 200ms;
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(3px);
+        }
+    }
+
+    &--body {
+        background-color: var(--color-prim);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 500px;
+        height: calc(100vh - var(--space) * 3);
+        padding: 16px 32px 0;
+        position: absolute;
+        right: 0;
+        top: -16px;
+        transform: translate(100%, 0);
+        transition: transform 500ms;
+        @media (max-width: $media-sm) {
+            width: 290px;
+            padding: 20px 16px 0;
+            top: -20px;
+        }
+    }
+    &--body._active {
+        transform: translate(0, 0);
+    }
+
+    &--close {
+        background-color: transparent;
+        cursor: pointer;
+        backdrop-filter: blur(3px);
+        width: 40px;
+        border-radius: 6px;
+        img {
+            width: 100%;
+        }
+        transition: all 200ms;
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(3px);
+        }
+        align-self: flex-end;
+    }
+
+    &--list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}

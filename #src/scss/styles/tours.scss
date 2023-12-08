@@ -1,0 +1,21 @@
+.tours {
+    padding: calc(var(--space) * 4) 0 calc(var(--space) * 5);
+    &--container {
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--space) * 2.5);
+    }
+    &--list {
+        .slick-track {
+            display: flex;
+            gap: 20px;
+        }
+        .slick-arrow {
+            display: none !important;
+        }
+    }
+
+    &--btn {
+        margin: 0 auto;
+    }
+}

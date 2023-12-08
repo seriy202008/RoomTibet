@@ -1,0 +1,9 @@
+.logo {
+    width: 137px;
+    img {
+        width: 100%;
+    }
+    @media (max-width: $media-sm) {
+        width: 100px;
+    }
+}

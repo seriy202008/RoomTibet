@@ -1,0 +1,44 @@
+.footer_bottom {
+    background-color: var(--color-text);
+    padding: 24px 0;
+    &--container {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $media-sm) {
+            flex-direction: column;
+            gap: 8px;
+            align-items: center;
+        }
+    }
+
+    &--data {
+        color: #fff;
+        font-family: var(--font-family-main);
+        font-size: var(--fz-xs);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px; /* 128.571% */
+    }
+
+    &--politic {
+        color: #fff;
+        font-family: var(--font-family-main);
+        font-size: var(--fz-xs);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px; /* 128.571% */
+        text-decoration-line: underline;
+        transition: all 250ms;
+        &:active,
+        &:focus,
+        &:link,
+        &:visited {
+            color: #fff;
+            text-decoration-line: underline;
+        }
+        &:hover {
+            color: var(--color-text-mark);
+            text-decoration-line: underline;
+        }
+    }
+}
