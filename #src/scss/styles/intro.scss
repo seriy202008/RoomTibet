@@ -10,6 +10,10 @@
         left: 0;
         bottom: calc(var(--space) * 4);
         width: 100%;
+        padding: 0 10px;
+        @media (max-width: $media-sm) {
+            padding: 0 16px;
+        }
     }
 
     &--title {
